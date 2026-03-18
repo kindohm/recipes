@@ -1,38 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 :root {
-  --bg: #f8f7f4;
-  --surface: #ffffff;
-  --text: #1c1c1c;
-  --text-muted: #6b6b6b;
-  --accent: #4a7c59;
-  --border: #e5e3de;
-  --border-light: #eeebe5;
+  --bg: #FAF8F3;
+  --surface: #F3EFE5;
+  --text: #1C1A16;
+  --text-muted: #8A8478;
+  --accent: #B85C38;
+  --border: #E3DDD2;
+  --border-light: #EDE8DF;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 300;
   background: var(--bg);
   color: var(--text);
   margin: 0;
   padding: 0;
-  line-height: 1.7;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
 }
 
 header {
-  background: var(--surface);
+  padding: 1.25rem 1.5rem;
   border-bottom: 1px solid var(--border);
-  padding: 1rem 1.5rem;
 }
 
 .site-title {
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  font-style: italic;
   text-decoration: none;
   color: var(--text);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
 }
 
 .site-title:hover {
@@ -40,17 +45,17 @@ header {
 }
 
 main {
-  max-width: 680px;
+  max-width: 640px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem 5rem;
+  padding: 3rem 1.5rem 6rem;
 }
 
 h1 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin: 0 0 1.5rem;
-  line-height: 1.25;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 2rem;
+  line-height: 1.2;
 }
 
 /* Home page recipe list */
@@ -59,68 +64,146 @@ h1 {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-top: 1px solid var(--border-light);
 }
 
 .recipe-list li {
   border-bottom: 1px solid var(--border-light);
 }
 
+.recipe-list li:first-child {
+  border-top: 1px solid var(--border-light);
+}
+
 .recipe-list a {
-  display: block;
-  padding: 0.7rem 0;
-  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0;
+  font-size: 1rem;
+  font-weight: 400;
   color: var(--text);
   text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.recipe-list a::after {
+  content: '→';
+  color: var(--border);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  margin-left: 1rem;
+  transition: color 0.15s ease, transform 0.15s ease;
 }
 
 .recipe-list a:hover {
   color: var(--accent);
 }
 
+.recipe-list a:hover::after {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
 /* Recipe page */
 
 .recipe h1 {
-  font-size: 2rem;
-  letter-spacing: -0.025em;
-  margin: 0 0 2rem;
-  line-height: 1.2;
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 500;
+  margin: 0 0 2.5rem;
+  line-height: 1.1;
 }
 
 .recipe h2 {
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   color: var(--text-muted);
-  margin: 2.5rem 0 0.75rem;
-  padding-bottom: 0.5rem;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.6rem;
   border-bottom: 1px solid var(--border);
 }
 
-.recipe ul,
-.recipe ol {
-  padding-left: 1.25rem;
+.recipe ul {
+  list-style: none;
+  padding: 0;
   margin: 0 0 1rem;
 }
 
-.recipe li {
-  margin: 0.45rem 0;
+.recipe ul li {
+  padding: 0.3rem 0 0.3rem 1.4rem;
+  position: relative;
   line-height: 1.65;
 }
 
+.recipe ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 300;
+}
+
+.recipe ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  counter-reset: steps;
+}
+
+.recipe ol li {
+  counter-increment: steps;
+  padding: 0.5rem 0 0.5rem 2.5rem;
+  position: relative;
+  line-height: 1.65;
+}
+
+.recipe ol li::before {
+  content: counter(steps);
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.5rem;
+}
+
 .back-link {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border);
 }
 
 .back-link a {
   font-size: 0.875rem;
+  font-weight: 400;
   color: var(--text-muted);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.15s ease;
+}
+
+.back-link a::before {
+  content: '←';
+  display: inline-block;
+  transition: transform 0.15s ease;
 }
 
 .back-link a:hover {
   color: var(--accent);
+}
+
+.back-link a:hover::before {
+  transform: translateX(-3px);
 }
