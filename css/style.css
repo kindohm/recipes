@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap");
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 :root {
-  --bg: #FAF8F3;
-  --surface: #F3EFE5;
-  --text: #1C1A16;
-  --text-muted: #8A8478;
-  --accent: #B85C38;
-  --border: #E3DDD2;
-  --border-light: #EDE8DF;
+  --bg: #faf8f3;
+  --surface: #f3efe5;
+  --text: #1c1a16;
+  --text-muted: #8a8478;
+  --accent: #b85c38;
+  --border: #e3ddd2;
+  --border-light: #ede8df;
 }
 
 body {
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: "DM Sans", system-ui, sans-serif;
   font-weight: 300;
   background: var(--bg);
   color: var(--text);
@@ -31,7 +33,7 @@ header {
 }
 
 .site-title {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.15rem;
   font-weight: 500;
   font-style: italic;
@@ -51,7 +53,7 @@ main {
 }
 
 h1 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 2rem;
   font-weight: 500;
   margin: 0 0 2rem;
@@ -87,12 +89,14 @@ h1 {
 }
 
 .recipe-list a::after {
-  content: '→';
+  content: "→";
   color: var(--border);
   font-size: 0.85rem;
   flex-shrink: 0;
   margin-left: 1rem;
-  transition: color 0.15s ease, transform 0.15s ease;
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
 }
 
 .recipe-list a:hover {
@@ -115,7 +119,7 @@ h1 {
 }
 
 .recipe h2 {
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: "DM Sans", system-ui, sans-serif;
   font-size: 0.68rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -139,10 +143,9 @@ h1 {
 }
 
 .recipe ul li::before {
-  content: '—';
+  content: "—";
   position: absolute;
   left: 0;
-  color: var(--accent);
   font-weight: 300;
 }
 
@@ -195,7 +198,7 @@ h1 {
 }
 
 .back-link a::before {
-  content: '←';
+  content: "←";
   display: inline-block;
   transition: transform 0.15s ease;
 }
