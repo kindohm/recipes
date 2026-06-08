@@ -2,16 +2,16 @@
 title: Chaska Lo Mein
 ---
 
-Serves two. For a third person, increase noodles to 9oz, and sauce ingredients by 50%.
+> NOTE: this recipe is for three people.
 
-This recipe uses carrot, celery, bell pepper, and broccoli for veggies, but you can
-use whatever veggies you want such as zucchini, pea pods, bok choy, etc.
+> This recipe uses carrot, celery, bell pepper, and broccoli for veggies, but you can
+> use whatever veggies you want such as zucchini, pea pods, bok choy, etc.
 
 ## Ingredients
 
 - 1 cooked chicken breast, cut into bite sized pieces
-- 1 tbsp canola oil, or another neutral oil with a high smoke point
-- 6oz lo mein or spaghetti noodles
+- 1-2 tbsp canola oil, or another neutral oil with a high smoke point. Use 2 tbsp if using broccoli.
+- 9oz lo mein or spaghetti noodles
 - 1 carrot, cut into small sticks or the shape of your choice
 - 1 celery stalk, sliced or chopped
 - 1 bell pepper, chopped
@@ -21,12 +21,11 @@ use whatever veggies you want such as zucchini, pea pods, bok choy, etc.
 
 And for the sauce:
 
-> increase by 50% for three people, or just double it if you like it saucy
-
 - 1/2 cup soy sauce
-- 3 tsp sugar or honey
-- 2-3 garlic cloves, minced or pressed (or 3 tsp jarlic)
-- 3 tsp sesame oil
+- 1/4 cup water
+- 4 tsp sugar or honey
+- 4 garlic cloves, finely chopped, or pressed (or 4 tsp jarlic)
+- 4 tsp sesame oil
 - 1 tsp fresh or jarred ginger (optional)
 - 1 tsp lime juice (optional)
 

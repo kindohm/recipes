@@ -1,6 +1,5 @@
 # TODO
 
-- lo mein
 - roasted potatoes
 - roasted cauliflower
 - roasted zucchini
