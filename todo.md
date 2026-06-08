@@ -1,6 +1,5 @@
 # TODO
 
-- roasted potatoes
 - roasted cauliflower
 - roasted zucchini
 - ramen broth

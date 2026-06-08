@@ -183,6 +183,14 @@ h1 {
   line-height: 1.65;
 }
 
+.recipe li > p {
+  margin: 0;
+}
+
+.recipe li > p + p {
+  margin-top: 0.75rem;
+}
+
 .recipe ul li::before {
   content: "—";
   position: absolute;
