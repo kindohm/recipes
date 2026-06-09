@@ -2,7 +2,10 @@
 title: Chaska Lo Mein
 ---
 
-> NOTE: this recipe is for three people.
+Is it _authentic_ lo mein? Heck no. This is Chaska lo mein, cooked
+and eaten in the Hodnick household.
+
+This recipe serves three people, with leftovers.
 
 > This recipe uses carrot, celery, bell pepper, and broccoli for veggies, but you can
 > use whatever veggies you want such as zucchini, pea pods, bok choy, etc.
@@ -11,7 +14,7 @@ title: Chaska Lo Mein
 
 - 1 cooked chicken breast, cut into bite sized pieces
 - 1-2 tbsp canola oil, or another neutral oil with a high smoke point. Use 2 tbsp if using broccoli.
-- 9oz lo mein or spaghetti noodles
+- 9oz noodles
 - 1 carrot, cut into small sticks or the shape of your choice
 - 1 celery stalk, sliced or chopped
 - 1 bell pepper, chopped
