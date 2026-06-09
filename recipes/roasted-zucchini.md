@@ -2,6 +2,10 @@
 title: Roasted zucchini
 ---
 
+You can also use about the same recipe for cauliflower, broccoli,
+etc. Oil and cook times might vary with different veggies, so you'll
+have to experiment and do what is in your heart.
+
 ## Ingredients
 
 Serves one, as a side dish:
